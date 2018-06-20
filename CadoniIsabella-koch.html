@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		<script src="three.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+        
+            
+            var controls = new THREE.Object3D();
+            
+            //Darstellung der Turtle
+            var turtle = new THREE.Object3D();
+            turtle.matrixAutoUpdate = false;
+            console.log( turtle.matrix.clone() );
+            
+            //Variablen und Gruppe
+            var group = new THREE.Group();
+            var length = 180;
+            var depth = 5;
+            
+            
+            function move (length){
+            var geometry = new THREE.BoxGeometry( length, 0.3, 0.1 );
+             var material = new THREE.MeshBasicMaterial( { color: "white" } );
+                //Turtle geht die Haelfte
+            turtle.matrix.multiply(new THREE.Matrix4().makeTranslation( length/2, 0, 0 ) );
+                //cube erstellen
+            var cube = new THREE.Mesh(geometry, material)     
+            cube.position.set(turtle.matrix.elements[12],turtle.matrix.elements[13], turtle.matrix.elements[14] );
+            cube.setRotationFromMatrix( turtle.matrix );
+            cube.updateMatrix();
+                //Turtle geht nochmal die Haelfte
+            turtle.matrix.multiply(new THREE.Matrix4().makeTranslation( length/2, 0, 0 ) );    
+            group.add(cube)
+            }
+             //Turtle dreht sich um
+            function turn (angle){
+                turtle.matrix.multiply (new THREE.Matrix4().makeRotationZ(angle))
+            }
+            
+
+            function koch(length, depth)
+            {
+                if (depth!==0) 
+                    {
+                        koch (length/3, depth-1);
+                        turn (Math.PI/3);
+                        koch( length/3, depth-1 );
+                        turn( -2*Math.PI/3 );
+                        koch( length/3, depth-1 );
+                        turn( Math.PI/3 );
+                        koch( length/3, depth-1 );
+                        
+                    }
+                
+                else 
+                    {
+                        move(length);
+                    }
+                
+            }
+
+			camera.position.z = 90;
+            camera.position.x = 80;
+            koch(length, depth);
+            scene.add(group)
+    
+            var animate = function (){
+                requestAnimationFrame(animate);
+                renderer.render(scene,camera);
+            };
+            animate();
+            
+
+		</script>
+	</body>
+</html>
