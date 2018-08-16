@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TPCam
+  - FPSCam
   layers:
   - Default
   - TransparentFX

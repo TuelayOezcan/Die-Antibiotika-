@@ -61,22 +61,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Skripte\CameraSwitch.cs" />
+    <Compile Include="Assets\Skripte\CamSwitch.cs" />
     <Compile Include="Assets\Skripte\Gravity.cs" />
     <Compile Include="Assets\Skripte\GravityReciever.cs" />
+    <Compile Include="Assets\Skripte\Planet.cs" />
     <Compile Include="Assets\Skripte\PlayerController.cs" />
+    <Compile Include="Assets\Skripte\Prefebs (Clonen) Planets.cs" />
     <None Include="Assets\sky5X\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/tulayozcan/Desktop/Planet faux gravity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/tulayozcan/Desktop/GitHub/Die-Antibiotika-/Planet faux gravity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/tulayozcan/Desktop/Planet faux gravity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/tulayozcan/Desktop/GitHub/Die-Antibiotika-/Planet faux gravity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/tulayozcan/Desktop/Planet faux gravity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/tulayozcan/Desktop/GitHub/Die-Antibiotika-/Planet faux gravity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/tulayozcan/Desktop/Planet faux gravity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/tulayozcan/Desktop/GitHub/Die-Antibiotika-/Planet faux gravity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

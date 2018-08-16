@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{850A214D-C86C-0CF7-60A3-97E13BD550D5}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Skripte/CameraSwitch.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Skripte/Planet.cs">
     <Files>
       <File FileName="Assets/Skripte/Gravity.cs" Line="21" Column="33" />
       <File FileName="Assets/Skripte/GravityReciever.cs" Line="12" Column="35" />
       <File FileName="Assets/Skripte/PlayerController.cs" Line="3" Column="2" />
-      <File FileName="Assets/Skripte/CameraSwitch.cs" Line="11" Column="1" />
+      <File FileName="Assets/Skripte/CamSwitch.cs" Line="6" Column="25" />
+      <File FileName="Assets/Skripte/Planet.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
