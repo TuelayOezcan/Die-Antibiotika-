@@ -41,6 +41,7 @@ public class pillen_auftauchen : MonoBehaviour {
 
             Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
 
-            yield return new WaitForSeconds(spawnWait);        }
+            yield return new WaitForSeconds(spawnWait);
+        }
     }
 }
