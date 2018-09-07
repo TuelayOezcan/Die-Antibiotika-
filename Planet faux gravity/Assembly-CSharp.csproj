@@ -61,12 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Skripte\CamSwitch.cs" />
-    <Compile Include="Assets\Skripte\Gravity.cs" />
-    <Compile Include="Assets\Skripte\GravityReciever.cs" />
-    <Compile Include="Assets\Skripte\Planet.cs" />
-    <Compile Include="Assets\Skripte\PlayerController.cs" />
-    <Compile Include="Assets\Skripte\Prefebs (Clonen) Planets.cs" />
+    <Compile Include="Assets\Scenes\Script\CamSwitch.cs" />
+    <Compile Include="Assets\Scenes\Script\FauxGravityAttractor.cs" />
+    <Compile Include="Assets\Scenes\Script\FauxGravityBody.cs" />
+    <Compile Include="Assets\Scenes\Script\PlayerController.cs" />
     <None Include="Assets\sky5X\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/tulayozcan/Desktop/GitHub/Die-Antibiotika-/Planet faux gravity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
