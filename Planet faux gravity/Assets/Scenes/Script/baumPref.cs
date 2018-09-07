@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 // Zuweisung via ObjectInspector
 public GameObject baumPref;
 
@@ -20,3 +20,5 @@ private void Start()
     // Wandsegment als Kind für diesen Raum hinzufügen
     tmpBaumPref.transform.parent = this.transform;
 }
+
+*/
