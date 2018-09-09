@@ -138,12 +138,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 177100}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &177102
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -205,7 +205,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 177100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.1, y: -2, z: 19.2}
+  m_LocalPosition: {x: -0.4, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894945538}
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &43624904
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &132029199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &156542529
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &245079108
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -754,16 +754,11 @@ Transform:
   m_Father: {fileID: 894945538}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &414041876 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321,
-    type: 2}
-  m_PrefabInternal: {fileID: 1547698450}
 --- !u!1 &459638479
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 100054, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 1612520774115988, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -771,6 +766,7 @@ GameObject:
   - component: {fileID: 459638482}
   - component: {fileID: 459638481}
   - component: {fileID: 459638483}
+  - component: {fileID: 459638484}
   m_Layer: 0
   m_Name: Virus
   m_TagString: Untagged
@@ -781,12 +777,12 @@ GameObject:
 --- !u!4 &459638480
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 400052, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4958980571742668, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459638479}
   m_LocalRotation: {x: -0.7798356, y: -0.46632305, z: -0.37225372, w: 0.18927851}
-  m_LocalPosition: {x: 0.25999, y: -0.19067, z: -0.064807}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 510894864}
@@ -795,8 +791,8 @@ Transform:
 --- !u!23 &459638481
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2300052, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 23713580755363508, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459638479}
   m_Enabled: 1
@@ -831,13 +827,26 @@ MeshRenderer:
 --- !u!33 &459638482
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3300052, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 33944509717601938, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459638479}
   m_Mesh: {fileID: 4300050, guid: 990ee73206a72440481148115743d98d, type: 3}
 --- !u!135 &459638483
 SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 135236313225310016, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459638479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 1.0111884
+  m_Center: {x: 0.027779996, y: -0.020792998, z: -0.018433042}
+--- !u!64 &459638484
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -845,9 +854,11 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0111884
-  m_Center: {x: 0.027779996, y: -0.020792998, z: -0.018433042}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300050, guid: 990ee73206a72440481148115743d98d, type: 3}
 --- !u!1 &464654450
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &464654453
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -949,8 +960,8 @@ MeshFilter:
 --- !u!1 &510894861
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 100052, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 1772771070300076, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -960,6 +971,7 @@ GameObject:
   - component: {fileID: 510894866}
   - component: {fileID: 510894865}
   - component: {fileID: 510894862}
+  - component: {fileID: 510894868}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -970,7 +982,8 @@ GameObject:
 --- !u!64 &510894862
 MeshCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 64990226584198188, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_Material: {fileID: 0}
@@ -985,8 +998,8 @@ MeshCollider:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 95129011067300494, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_Enabled: 1
@@ -1003,8 +1016,8 @@ Animator:
 --- !u!4 &510894864
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 400054, guid: 990ee73206a72440481148115743d98d,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4577226264222418, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
@@ -1012,14 +1025,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 459638480}
-  - {fileID: 414041876}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &510894865
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 114284255742658454, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_Enabled: 1
@@ -1030,14 +1043,16 @@ MonoBehaviour:
 --- !u!33 &510894866
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 33495032151815308, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_Mesh: {fileID: 0}
 --- !u!135 &510894867
 SphereCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 135166222356707562, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510894861}
   m_Material: {fileID: 0}
@@ -1046,6 +1061,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &510894868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114738987303877590, guid: 855488de645f54c61a69d6c30985a872,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510894861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a140a7e8f9e1248979fe3b110facdf52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baumPrefab: {fileID: 1286001794099182, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
 --- !u!1 &545255156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &545255158
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1259,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &637954469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1442,7 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &656074610
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1540,7 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &671795731
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1692,7 +1720,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711846548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.07, z: 0}
+  m_LocalPosition: {x: 0, y: 7.07, z: 8.4}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 2139085316}
@@ -1782,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &729630769
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1965,7 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &753913204
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2063,7 +2091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &805300705
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2262,12 +2290,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894945534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!1 &1049152973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +2424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1068785626
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2494,7 +2522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1149687366
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2579,7 +2607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1167153380
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2677,7 +2705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1221035358
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2775,7 +2803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1228584515
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2873,7 +2901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1288839612
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2984,7 +3012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1382252708
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3069,7 +3097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1453293180
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3167,7 +3195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1517192343
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3235,72 +3263,6 @@ Transform:
   m_Father: {fileID: 894945538}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1547698450
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 510894864}
-    m_Modifications:
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 8.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.09416745
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.1290363
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.9274559
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.33809432
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -190.118
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 195.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 41.43199
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5301611
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.4514702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469608840064252, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.45147008
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1625793151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,7 +3293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1625793153
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3506,7 +3468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1672753883
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3604,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1678685991
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3702,7 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1726476174
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3800,7 +3762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1761999721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3911,7 +3873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1805723405
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4009,7 +3971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1969932889
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4094,7 +4056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &1973841970
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4277,7 +4239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &2046463075
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4375,7 +4337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92117ebdc08d948d4b530104a2e5b100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!135 &2055651378
 SphereCollider:
   m_ObjectHideFlags: 0

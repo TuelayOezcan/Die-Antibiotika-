@@ -30,8 +30,8 @@ public class BakterienBewegenAutomatisch : MonoBehaviour {
 
         rand = Random.Range(0, 2);
         startTime = Time.time;
-        startMarker = this.transform.position + new Vector3(-10f, 0f, 0f);
-        endMarker = this.transform.position + new Vector3(10f, 0f, 0f);
+        startMarker = this.transform.position + new Vector3(-100f, 0f, 0f);
+        endMarker = this.transform.position + new Vector3(100f, 0f, 0f);
         journeyLength = Vector3.Distance(startMarker, endMarker);
 
         //wird gespeichert sobald Spiel gestartet wird (Source und Target)
