@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{850A214D-C86C-0CF7-60A3-97E13BD550D5}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Script/SpawnTrees.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Assets/Scenes/Script/CamSwitch.cs" Line="15" Column="12" />
       <File FileName="Assets/Scenes/Script/FauxGravityAttractor.cs" Line="1" Column="1" />
@@ -8,8 +8,8 @@
       <File FileName="Assets/Scenes/Script/PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scenes/Script/baumPref.cs" Line="1" Column="1" />
       <File FileName="Assets/Scenes/Script/Kochkurve.cs" Line="9" Column="17" />
-      <File FileName="Assets/Scenes/Script/BakterienBewegenAutomatisch.cs" Line="34" Column="72" />
-      <File FileName="Assets/Scenes/Script/SpawnTrees.cs" Line="6" Column="5" />
+      <File FileName="Assets/Scenes/Script/BakterienBewegenAutomatisch.cs" Line="37" Column="28" />
+      <File FileName="Assets/Scenes/Script/SpawnTrees.cs" Line="33" Column="79" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
