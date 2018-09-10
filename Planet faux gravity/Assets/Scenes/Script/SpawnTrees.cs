@@ -8,7 +8,7 @@ public class SpawnTrees : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // Seed für Generator setzen (damit es zwar zufällig ist, aber diese einmal zufällig verteilten 
+        // Seed für Generator setzten (damit es zwar zufällig ist, aber diese einmal zufällig verteilten 
         // Bäume bei jedem Spielstart wieder an der selben Position sind).
         // https://docs.unity3d.com/530/Documentation/ScriptReference/Random-seed.html
         Random.seed = 22;
