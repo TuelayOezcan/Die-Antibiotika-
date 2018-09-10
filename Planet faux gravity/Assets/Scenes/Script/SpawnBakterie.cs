@@ -10,7 +10,7 @@ public class SpawnBakterie : MonoBehaviour {
     void Start()
     {
         // Seed für Generator setzten (damit es zwar zufällig ist, aber diese einmal zufällig verteilten 
-        // Bäume bei jedem Spielstart wieder an der selben Position sind).
+        // Bakterien bei jedem Spielstart wieder an der selben Position sind).
         // https://docs.unity3d.com/530/Documentation/ScriptReference/Random-seed.html
         Random.seed = -100;
 
@@ -19,7 +19,7 @@ public class SpawnBakterie : MonoBehaviour {
             GameObject tmpBakterie;
 
             //https://docs.unity3d.com/ScriptReference/Random-onUnitSphere.html
-            // Zufallspunkt auf einer Einheitskugel
+            // Zufallspunkt 
             Vector3 position = Random.onUnitSphere * 200f;
 
             Vector3 normale = position;
@@ -33,11 +33,11 @@ public class SpawnBakterie : MonoBehaviour {
 
             tmpBakterie = (GameObject)Instantiate(bakteriePrefab, position, rotation);
 
-            // Baum positionieren
-            //tmpBaum.transform.position = position;
+            // Bakterien positionieren
+            //tmpBakterie.transform.position = position;
 
             // https://forum.unity.com/threads/need-help-trying-to-populate-objects-on-a-sphere-randomly.184705
-            // Baum ausrichten 
+            // Bakterie ausrichten 
 
 
             tmpBakterie.transform.parent = this.transform;
