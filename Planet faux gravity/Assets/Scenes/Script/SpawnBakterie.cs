@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Code ähnlich wie mein Code für SpawnTrees, jedoch angepasst und verändert an mein neues Problem mit den
+//Bakterien. Rotation beibehalten, da man die Bakterien (Kugel) ersetzten könnte mit einem Anderem Objekt
+//und die Rotation dann wieder benötigt. 
+
 public class SpawnBakterie : MonoBehaviour {
 
     public GameObject bakteriePrefab;

@@ -61,7 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\Script\BakterienBewegenAutomatisch.cs" />
+    <Compile Include="Assets\Scenes\Script\BakterienTranslation.cs" />
     <Compile Include="Assets\Scenes\Script\CamSwitch.cs" />
     <Compile Include="Assets\Scenes\Script\FauxGravityAttractor.cs" />
     <Compile Include="Assets\Scenes\Script\FauxGravityBody.cs" />

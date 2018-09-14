@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 510894865}
   - component: {fileID: 510894862}
   - component: {fileID: 510894868}
+  - component: {fileID: 510894869}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -471,6 +472,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baumPrefab: {fileID: 1286001794099182, guid: d1255ad64ae7e4cca9a3384cd7c7e321, type: 2}
+--- !u!114 &510894869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510894861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329433877a8e5465283c7ac48ea8f22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 8811e33fa3a374b5d89a230161e4a013, type: 2}
 --- !u!1 &711846548
 GameObject:
   m_ObjectHideFlags: 0
