@@ -61,7 +61,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripte\bewegung.cs" />
     <Compile Include="Assets\Scripte\pillen_auftauchen.cs" />
-    <Compile Include="Assets\Scripte\verschwinden.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Sina/Documents/Pillen/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

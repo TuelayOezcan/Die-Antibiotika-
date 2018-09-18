@@ -12,7 +12,10 @@ public class bewegung : MonoBehaviour
     private float startTime;
     private float journeyLength;
 
-    private float delay = 5.0f; //Zeitangabe wann zerstört wird
+    //public float delay = 5.0f;
+    private float yieldTimeMin = 2.0f;
+    private float yieldTimeMax = 5.0f;
+
 
     private int rand;
 
@@ -26,7 +29,7 @@ public class bewegung : MonoBehaviour
     //nach Zeitablauf wird zerstört
     IEnumerator WaitAndDestroy()
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(Random.Range(yieldTimeMin, yieldTimeMax)); 
         Destroy(gameObject);
     }
 
@@ -43,7 +46,6 @@ public class bewegung : MonoBehaviour
         endMarker = this.transform.position + new Vector3(3f, 0f, 0f);
         journeyLength = Vector3.Distance(startMarker, endMarker);
 
-
         //wird gespeichert sobald Spiel gestartet wird (Source und Target)
         //sourcePosition = transform.position; //lokale Transformtaion
         //targetPosition = targetTransform.position;
@@ -52,6 +54,7 @@ public class bewegung : MonoBehaviour
 
     void Update()
     {
+
         float distCovered = (Time.time - startTime) + speed;
         float fracJourney = distCovered / journeyLength;
 
