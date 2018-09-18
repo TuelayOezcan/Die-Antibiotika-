@@ -12,6 +12,8 @@ public class bewegung : MonoBehaviour
     private float startTime;
     private float journeyLength;
 
+    private float delay = 5.0f; //Zeitangabe wann zerstört wird
+
     private int rand;
 
     //public Transform targetTransform; //Zielposition 
@@ -21,19 +23,26 @@ public class bewegung : MonoBehaviour
     //private Vector3 sourcePosition; //von welcher Position wir ausgehen
     //private Vector3 targetPosition; //zu welcher Position wir hin wollen
 
+    //nach Zeitablauf wird zerstört
+    IEnumerator WaitAndDestroy()
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
+    }
+
     void Start()
     {
-        // Die beiden Gameobjects müssen Kinder werden 
+        StartCoroutine(WaitAndDestroy());
+
         startMarker = Vector3.zero;
         endMarker = Vector3.zero;
-        //startMarker.transform.parent = this.transform;
-        //endMarker.transform.parent = this.transform;
 
         rand = Random.Range(0, 2);
         startTime = Time.time;
         startMarker = this.transform.position + new Vector3(-3f, 0f, 0f);
         endMarker = this.transform.position + new Vector3(3f, 0f, 0f);
         journeyLength = Vector3.Distance(startMarker, endMarker);
+
 
         //wird gespeichert sobald Spiel gestartet wird (Source und Target)
         //sourcePosition = transform.position; //lokale Transformtaion
