@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio for Mac
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meteor", "Assembly-CSharp.csproj", "{EA192A08-2241-406B-FF6B-BBCC7DE6560A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EA192A08-2241-406B-FF6B-BBCC7DE6560A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

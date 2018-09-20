@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{EA192A08-2241-406B-FF6B-BBCC7DE6560A}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MoveX.cs">
     <Files>
-      <File FileName="Assets/MoveX.cs" Line="34" Column="8" />
+      <File FileName="Assets/MoveX.cs" Line="30" Column="1" />
       <File FileName="Assets/OnCollision.cs" Line="14" Column="7" />
-      <File FileName="Assets/Spawner.cs" Line="40" Column="13" />
+      <File FileName="Assets/Spawner.cs" Line="40" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
