@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    /*
+     * Tülays Code
+     */
 
-    float speed = 10;
+    public float speed = 10;
     float jumpPower = 300;
     bool isJumping = false;
     Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -33,5 +37,15 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
 
+        /*Ergänzung von Bella, um Schwierigkeitsgrad nach und nach zu erhoehen.
+        */
+        Invoke("SpeedUp", 2f);
+
     }
+
+    //Geschwindigkeit erhoehen
+    void SpeedUp(){
+        speed += (float) 0.01;
+    }
+
 }
