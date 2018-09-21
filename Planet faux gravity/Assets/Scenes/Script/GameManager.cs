@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     bool gamesHasEnded = false;
-    public float restartTime = 0.5f;
+    public float restartTime = 40f;
+
+    public GameObject gameOverUI;
 
     public void completeLevel()
     {
@@ -21,6 +23,10 @@ public class GameManager : MonoBehaviour {
         {
             gamesHasEnded = true;
             Debug.Log("GAME OVER");
+            gameOverUI.SetActive(true);
+
+
+
             //Restart game
             Invoke("Restart", restartTime);
         }
