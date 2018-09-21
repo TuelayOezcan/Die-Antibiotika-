@@ -5,15 +5,15 @@ using UnityEngine;
 public class SphericalPowerUpSpawner : MonoBehaviour {
 
     public GameObject speedPowerUpPrefab;
-    public GameObject defensePowerUpPrefab;
-    public GameObject meteorPowerUpPrefab;
+    //public GameObject defensePowerUpPrefab;
+  //  public GameObject meteorPowerUpPrefab;
 	// Use this for initialization
 	void Start () {
 //Schleife fuer Speed Poweup
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 15; i++)
         {
             //Zufallspunkt auf der Sphere
-            Vector3 pos = Random.onUnitSphere * 8.5f;
+            Vector3 pos = Random.onUnitSphere * 18.5f;
             Vector3 normale = pos;
             Vector3 tangente = normale;
             Vector3.OrthoNormalize(ref normale, ref tangente);
@@ -22,10 +22,10 @@ public class SphericalPowerUpSpawner : MonoBehaviour {
             // rotation *= Quaternion.Euler(-90, 0, 0);
             //In Gameobject casten
             GameObject powerUPOne = (GameObject)Instantiate(speedPowerUpPrefab, pos, rotation);
-            //powerUP.transform.position = pos;
+            powerUPOne.transform.parent = this.transform;
             // meteor.transform.parent = this.transform;
         }
-        //Schleife fuer Defense
+  /*      //Schleife fuer Defense
         for (int i = 0; i < 5;i++)
         {
             Vector3 pos = Random.onUnitSphere * 7.5f;
@@ -48,7 +48,7 @@ public class SphericalPowerUpSpawner : MonoBehaviour {
             Quaternion rotation = Quaternion.LookRotation(tangente, normale);
             GameObject powerUPThree = (GameObject)Instantiate(meteorPowerUpPrefab, pos, rotation);
         }
-
+        */
     }
 
     // Update is called once per frame

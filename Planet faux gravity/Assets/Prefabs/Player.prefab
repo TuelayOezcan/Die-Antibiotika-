@@ -11,16 +11,16 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1902745778426498}
   m_IsPrefabAsset: 1
---- !u!1 &1441125852431688
+--- !u!1 &1602815154350158
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4417632651229158}
-  - component: {fileID: 20251050033596094}
-  - component: {fileID: 81092247957565752}
+  - component: {fileID: 4090718710714716}
+  - component: {fileID: 20492994688397496}
+  - component: {fileID: 81362006297614032}
   m_Layer: 0
   m_Name: FPSCam
   m_TagString: Player
@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 54728837394424794}
   - component: {fileID: 114788999485461994}
   - component: {fileID: 114136035940618222}
+  - component: {fileID: 114713315605263260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -67,12 +68,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4417632651229158
+--- !u!4 &4090718710714716
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441125852431688}
+  m_GameObject: {fileID: 1602815154350158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -103,21 +104,21 @@ Transform:
   m_LocalPosition: {x: 0, y: 9.9, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
-  - {fileID: 4417632651229158}
+  - {fileID: 4090718710714716}
   - {fileID: 4884310009089072}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &20251050033596094
+--- !u!20 &20490489852784184
 Camera:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441125852431688}
+  m_GameObject: {fileID: 1721686539685516}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21804911, g: 0.23597759, b: 0.5176471, a: 0.69803923}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -148,16 +149,16 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!20 &20490489852784184
+--- !u!20 &20492994688397496
 Camera:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721686539685516}
+  m_GameObject: {fileID: 1602815154350158}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.21804911, g: 0.23597759, b: 0.5176471, a: 0.69803923}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -252,12 +253,12 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721686539685516}
   m_Enabled: 1
---- !u!81 &81092247957565752
+--- !u!81 &81362006297614032
 AudioListener:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441125852431688}
+  m_GameObject: {fileID: 1602815154350158}
   m_Enabled: 1
 --- !u!114 &114136035940618222
 MonoBehaviour:
@@ -270,9 +271,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07e1c84821644362828b2575ef16a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPSCam: {fileID: 20251050033596094}
+  FPSCam: {fileID: 20492994688397496}
   TPCam: {fileID: 20490489852784184}
   CameraSwitch: 0
+--- !u!114 &114713315605263260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902745778426498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc86b384ab54705a20a91e86f15143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumValue: -45
+  maximumValue: 45
+  axes: 1
+  sensHorizontal: 10
+  sensVertical: 10
+  _rotationX: 0
 --- !u!114 &114788999485461994
 MonoBehaviour:
   m_ObjectHideFlags: 1

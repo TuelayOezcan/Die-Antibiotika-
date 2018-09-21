@@ -109,6 +109,9 @@ public class Kochkurve : MonoBehaviour
         // Material zuweisen
         cube.GetComponent<Renderer>().material = mat;
 
+        // BoxCollider deaktivieren (keine Kollision mit Fraktalen)
+        cube.GetComponent<BoxCollider>().enabled = false;
+
         turtle.transform.Translate(length / 2, 0, 0);
 
         // Jedes Segment wird als Kind der Root hinzugefügt

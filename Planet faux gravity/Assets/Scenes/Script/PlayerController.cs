@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         /*Ergänzung von Bella, um Schwierigkeitsgrad nach und nach zu erhoehen.
         */
-        Invoke("SpeedUp", 2f);
+        Invoke("SpeedUp", 10f);
 
     }
 

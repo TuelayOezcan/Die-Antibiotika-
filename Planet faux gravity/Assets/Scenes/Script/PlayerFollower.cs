@@ -2,36 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFollower : MonoBehaviour {
+public class PlayerFollower : MonoBehaviour
+{
 
+    // Folge dem Spieler
     public GameObject followObject;
-    public float speed = 0.125f;
-    public Vector3 offset;
-    public Transform target;
-	
-	// Update is called once per frame
-	void FixedUpdate () {
 
-        Vector3 desiredPosition = target.position + offset;
-        Vector3 smoothPosition = Vector3.Lerp(transform.position, desiredPosition, speed);
-        transform.position = smoothPosition;
+    // Random Offset
+    private Vector3 offset;
 
-        transform.LookAt(target);
+    // Meteor Prefab
+    public GameObject meteorPrefab;
+
+    // Spawn interval
+    private float SpawnTime = 1.0f;
+
+    // Use this for initialization
+    void Start()
+    {
+        // Einamliger Aufruf der Coroutine
+        StartCoroutine(SpawnMeteor());
+    }
+
+    // Erzeugt Meteore
+    IEnumerator SpawnMeteor()
+    {
+        // Zufallspunkt auf der Sphere
+        Vector3 pos = followObject.transform.position * Random.Range(5.0f, 10.0f);
+
+        // Meteor instanziieren
+        GameObject meteor = (GameObject)Instantiate(meteorPrefab, pos, Quaternion.identity);
+        meteor.transform.parent = this.transform;
+
+        // Alle 3 sec ein Meteor
+        yield return new WaitForSeconds(SpawnTime);
+
+        // Loop SpawnMeteor Coroutine
+        StartCoroutine(SpawnMeteor());
+    }
 
 
-       /* float interpolation = speed * Time.deltaTime;
-        Vector3 position = this.transform.position;
-        position.y = Mathf.Lerp(this.transform.position.y, followObject.transform.position.y, interpolation);
-        position.x = Mathf.Lerp(this.transform.position.x, followObject.transform.position.x, interpolation);
-        position.z = Mathf.Lerp(this.transform.position.z, followObject.transform.position.z, interpolation);
+    // Update is called once per frame
+    void Update()
+    {
 
-        this.transform.position = position;
-
-        //Object looks at what its following
-       // transform.LookAt(target);
-     //  transform.Translate(Vector3.forward * 5 * Time.deltaTime);*/
-
-
-
-	}
+    }
 }
