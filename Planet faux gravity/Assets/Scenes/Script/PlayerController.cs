@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
      * Tülays Code
      */
 
-    public float speed = 10;
+    public float speed = 8;
     float jumpPower = 300;
     bool isJumping = false;
     Rigidbody rb;
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     //Geschwindigkeit erhoehen
     void SpeedUp(){
-        speed += (float) 0.01;
+        speed += (float) 0.005;
     }
 
 }

@@ -22,6 +22,8 @@ public class MeteorCollision : MonoBehaviour
             DeleteMeteor();
     }
 
+    //Unity 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Virus")

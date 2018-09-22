@@ -45,5 +45,14 @@ public class MeteorSpawner : MonoBehaviour
 
         // Gravitation handled by faux gravity
     }
+
+    //Verringert die Zeit, in der Meteoriten gespawnt werden
+    void MeteorErhoehen()
+    {
+
+        SpawnTime -= 0.01f; 
+
+    }
+
 }
 

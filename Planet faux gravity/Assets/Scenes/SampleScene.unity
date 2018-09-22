@@ -1527,9 +1527,9 @@ MonoBehaviour:
   scoreText: {fileID: 1555680188}
   hiScoreText: {fileID: 135688276}
   timeText: {fileID: 157052427}
-  scoreCount: 1
-  hiScoreCount: 5
-  pointsPerSecond: 1
+  scoreCount: 0
+  hiScoreCount: 0
+  pointsPerSecond: 10
   scoreIncreasing: 1
   meter: 0
   position1: 0

@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Das Youtube Video: 
+ * von Brackeys wurde genutzt. Letzter Zugriff: 
+*/
+
+
 public class GameManager : MonoBehaviour {
 
+    //setzt gameHasEnded auf false by default
     bool gamesHasEnded = false;
+    // Die Zeit, die gewartet wird, bis das Spiel restartet wird
     public float restartTime = 40f;
 
+    //UI Variablen
     public GameObject gameOverUI;
     public GameObject scoreUI;
 
-    public void completeLevel()
-    {
-        Debug.Log("FINISH");
-    }
-
-
+    //Methode, um das Spiel enden zu lassen
+    //GameOver Text wird angezeigt
+    //Die ScoreUI wird nicht mehr angezeigt
     public void Endgame()
     {
 

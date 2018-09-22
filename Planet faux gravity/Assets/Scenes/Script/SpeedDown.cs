@@ -18,7 +18,6 @@ public class SpeedDown : MonoBehaviour {
 	void Update () {
 
     }
-
     /*
 
     void SetTrue ()
@@ -51,8 +50,8 @@ public class SpeedDown : MonoBehaviour {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
-  //      ScoreManager playerScore = GetComponent<ScoreManager>();
-//        playerScore.scoreCount += 10f;
+  //     ScoreManager playerScore = GetComponent<ScoreManager>();
+//       playerScore.scoreCount += 10f;
 
 
         //Warte x Zeit
