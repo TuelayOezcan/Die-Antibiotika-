@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     public float restartTime = 40f;
 
     public GameObject gameOverUI;
+    public GameObject scoreUI;
 
     public void completeLevel()
     {
@@ -24,8 +25,7 @@ public class GameManager : MonoBehaviour {
             gamesHasEnded = true;
             Debug.Log("GAME OVER");
             gameOverUI.SetActive(true);
-
-
+            scoreUI.SetActive(false);
 
             //Restart game
             Invoke("Restart", restartTime);
