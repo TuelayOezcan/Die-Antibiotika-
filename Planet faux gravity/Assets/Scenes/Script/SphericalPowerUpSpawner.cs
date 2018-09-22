@@ -15,7 +15,7 @@ public class SphericalPowerUpSpawner : MonoBehaviour {
         for (int i = 0; i < 15; i++)
         {
             //Zufallspunkt auf der Sphere
-            Vector3 pos = Random.onUnitSphere * 8.5f;
+            Vector3 pos = Random.onUnitSphere * 8.2f;
             Vector3 normale = pos;
             Vector3 tangente = normale;
             Vector3.OrthoNormalize(ref normale, ref tangente);
@@ -27,18 +27,7 @@ public class SphericalPowerUpSpawner : MonoBehaviour {
             powerUPOne.transform.parent = this.transform;
             // meteor.transform.parent = this.transform;
         }
-  /*      //Schleife fuer Defense
-        for (int i = 0; i < 5;i++)
-        {
-            Vector3 pos = Random.onUnitSphere * 7.5f;
-            Vector3 normale = pos;
-            Vector3 tangente = normale;
-            Vector3.OrthoNormalize(ref normale, ref tangente);
-            //Rotation
-            Quaternion rotation = Quaternion.LookRotation(tangente, normale);
-            // rotation *= Quaternion.Euler(-90, 0, 0);
-            GameObject powerUPTwo = (GameObject)Instantiate(defensePowerUpPrefab, pos, rotation);
-        }
+        /*
         //Schleife fuer Meteor
         for (int i = 0; i < 1; i++)
         {
