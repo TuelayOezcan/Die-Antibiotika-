@@ -50,9 +50,6 @@ public class MeteorCollision : MonoBehaviour
             StartCoroutine(DeleteMeteor());
             FindObjectOfType<GameManager>().Endgame();
 
-
-
-
         }
     }
 

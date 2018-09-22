@@ -9,11 +9,13 @@ public class SphericalPowerUpSpawner : MonoBehaviour {
   //  public GameObject meteorPowerUpPrefab;
 	// Use this for initialization
 	void Start () {
+
+
 //Schleife fuer Speed Poweup
         for (int i = 0; i < 15; i++)
         {
             //Zufallspunkt auf der Sphere
-            Vector3 pos = Random.onUnitSphere * 18.5f;
+            Vector3 pos = Random.onUnitSphere * 8.5f;
             Vector3 normale = pos;
             Vector3 tangente = normale;
             Vector3.OrthoNormalize(ref normale, ref tangente);

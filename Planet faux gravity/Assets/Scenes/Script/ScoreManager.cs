@@ -45,7 +45,6 @@ public class ScoreManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //  meter = meter.SphericalDistance(position1, position2);
-
         //Berechnet Zeit - StartZeit
         //Ein Timer wird in dem Spiel angezeigt
         float t = Time.time - startTime;
@@ -56,8 +55,8 @@ public class ScoreManager : MonoBehaviour {
         if (scoreIncreasing)
         {
             //Addiert Score mit Punkte pro Sekunde mal Zeit pro Frame
-            scoreCount += pointsPerSecond * Time.deltaTime;
-           
+            scoreCount += t;
+                //pointsPerSecond * Time.deltaTime;
         }
 
         if (scoreCount > hiScoreCount)
