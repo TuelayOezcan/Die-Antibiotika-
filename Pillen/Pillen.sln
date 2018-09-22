@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillen", "Assembly-CSharp.csproj", "{1A2958B1-380E-BBBF-81E6-5E161E9E348C}"
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1A2958B1-380E-BBBF-81E6-5E161E9E348C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
