@@ -14,16 +14,10 @@ public class ScoreManager : MonoBehaviour {
 
     public float scoreCount;
     public float hiScoreCount;
+    public float timeCount;
 
     public float pointsPerSecond;
     public bool scoreIncreasing;
-
-    public float meter;
-    public float position1;
-    public float position2;
-
-
-
 
 
 	// Use this for initialization
@@ -31,15 +25,13 @@ public class ScoreManager : MonoBehaviour {
 
         startTime = Time.time;
 
-	
         if(PlayerPrefs.HasKey("HighScore"))
-        {
-            hiScoreCount = PlayerPrefs.GetFloat("HighScore");
-        }
+          {
+              hiScoreCount = PlayerPrefs.GetFloat("HighScore");
+          }
 
 
-	}
-	
+    	 }
 
 
 	// Update is called once per frame
@@ -50,16 +42,24 @@ public class ScoreManager : MonoBehaviour {
             scoreCount += pointsPerSecond * Time.deltaTime;
         }
 
+        timeCount -= Time.deltaTime;
+        if (timeCount <0)
+        {
+            FindObjectOfType<GameManager>().Endgame();
+        }
 
+        timeText.text = "TIME LEFT: " + Mathf.Round(timeCount);
+
+        /*
+         * War zuerst geplant, habe mich dann doch für 
+         * einern Timer, der runterzählt, entschieden
+         * 
         //Berechnet Zeit - StartZeit
-        //Ein Timer wird in dem Spiel angezeigt
+        //Ein normaler Timer wird in dem Spiel angezeigt
         float t = Time.time - startTime;
         float minutes = ((int)t / 60);
         float seconds = (t % 60);
-        timeText.text = minutes + " : " + Mathf.Round(seconds);
-
-
-       
+        timeText.text = "Time:   " + minutes + " : " + Mathf.Round(seconds);*/
 
 
         //Wenn Der Score hoeher ist als highscore, 

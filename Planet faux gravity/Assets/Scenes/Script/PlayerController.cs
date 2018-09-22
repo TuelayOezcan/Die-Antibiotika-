@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !isJumping)
             isJumping = true;
+
+        //Ergänzung von Bella, um Schwierigkeitsgrad nach und nach zu erhoehen.
+        Invoke("SpeedUp", 10f);
     }
 
     void FixedUpdate()
@@ -37,9 +40,7 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
 
-        /*Ergänzung von Bella, um Schwierigkeitsgrad nach und nach zu erhoehen.
-        */
-        Invoke("SpeedUp", 10f);
+       
 
     }
 

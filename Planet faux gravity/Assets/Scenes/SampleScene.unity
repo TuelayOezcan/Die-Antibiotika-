@@ -216,7 +216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -156, y: -67}
+  m_AnchoredPosition: {x: -66, y: -67}
   m_SizeDelta: {x: 309.77, y: 70.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135688276
@@ -240,7 +240,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -118.3}
+  m_AnchoredPosition: {x: -6, y: -126}
   m_SizeDelta: {x: 381.54, y: 72.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157052427
@@ -1529,11 +1529,9 @@ MonoBehaviour:
   timeText: {fileID: 157052427}
   scoreCount: 0
   hiScoreCount: 0
+  timeCount: 10
   pointsPerSecond: 10
   scoreIncreasing: 1
-  meter: 0
-  position1: 0
-  position2: 0
 --- !u!1 &1555680186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 235.7, y: -72}
+  m_AnchoredPosition: {x: 212, y: -61}
   m_SizeDelta: {x: 290, y: 57.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555680188
@@ -1590,7 +1588,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
