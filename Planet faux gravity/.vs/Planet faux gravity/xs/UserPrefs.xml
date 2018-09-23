@@ -2,13 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Script/SpeedDown.cs">
     <Files>
-      <File FileName="Assets/Scenes/Script/MeteorSpawner.cs" Line="36" Column="33" />
-      <File FileName="Assets/Scenes/Script/ScoreManager.cs" Line="32" Column="9" />
-      <File FileName="Assets/Scenes/Script/GameManager.cs" Line="25" Column="44" />
-      <File FileName="Assets/Scenes/Script/PlayerController.cs" Line="19" Column="49" />
-      <File FileName="Assets/Scenes/Script/MeteorCollision.cs" Line="25" Column="13" />
-      <File FileName="Assets/Scenes/Script/SphericalPowerUpSpawner.cs" Line="15" Column="31" />
-      <File FileName="Assets/Scenes/Script/SpeedDown.cs" Line="57" Column="18" />
+      <File FileName="Assets/Scenes/Script/SpeedDown.cs" Line="56" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
