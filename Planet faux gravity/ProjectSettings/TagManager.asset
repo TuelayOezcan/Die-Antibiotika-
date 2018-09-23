@@ -6,6 +6,9 @@ TagManager:
   tags:
   - TPCam
   - FPSCam
+  - hispeed
+  - lowspeed
+  - placebo
   layers:
   - Default
   - TransparentFX

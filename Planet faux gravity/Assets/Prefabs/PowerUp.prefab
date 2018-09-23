@@ -112,6 +112,7 @@ MonoBehaviour:
   pickupEffekt: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9,
     type: 2}
   duration: 4
+  powerText: {fileID: 0}
 --- !u!114 &114727589851254166
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     /*
-     * Tülays Code
+     * Tülays Skript
+     * Ergaenzungen von Bella, um Schwierigkeitsgrad zu erhoehen
      */
 
     public float speed = 8;
@@ -13,9 +14,17 @@ public class PlayerController : MonoBehaviour
     bool isJumping = false;
     Rigidbody rb;
 
+    //Ergaenzung: Zeit, bis die Geschwindigkeit erhoeht wird
+    public float waitTime = 5f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+
+        //Ergaenzung: Einmaliger Aufruf in der Start-Methode
+        StartCoroutine(SpeedUp());
+
     }
 
 
@@ -23,9 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !isJumping)
             isJumping = true;
-
-        //Ergänzung von Bella, um Schwierigkeitsgrad nach und nach zu erhoehen.
-        Invoke("SpeedUp", 10f);
+           
     }
 
     void FixedUpdate()
@@ -40,13 +47,16 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
 
-       
-
     }
 
-    //Geschwindigkeit erhoehen
-    void SpeedUp(){
-        speed += (float) 0.005;
+   
+    //Ergaenzung: Alle 10 Sekunden wird die Geschwindigkeit erhoeht
+    //Rekursive Methode
+    IEnumerator SpeedUp(){
+        yield return new WaitForSeconds(waitTime);
+        speed += 0.1f;
+        //Methode ruft sich selbst noch einmal auf, rekursiv
+        StartCoroutine(SpeedUp());
     }
 
 }

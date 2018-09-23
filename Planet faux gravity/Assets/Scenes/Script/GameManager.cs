@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
     //setzt gameHasEnded auf false by default
     bool gamesHasEnded = false;
     // Die Zeit, die gewartet wird, bis das Spiel restartet wird
-    public float restartTime = 40f;
+    public float restartTime = 4f;
 
     //UI Variablen
     public GameObject gameOverUI;

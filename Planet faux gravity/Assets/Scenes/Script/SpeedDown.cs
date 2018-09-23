@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpeedDown : MonoBehaviour {
 
@@ -10,8 +11,6 @@ public class SpeedDown : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-   
-
     }
 	
 	// Update is called once per frame
@@ -38,31 +37,67 @@ public class SpeedDown : MonoBehaviour {
 
     IEnumerator Pickup(Collider player)
     {
-        //Cooler Effekt anwenden
+        //Coolen Effekt anwenden
         Instantiate(pickupEffekt, transform.position, transform.rotation);
 
-        //Effekt auf den Player anwenden
-        //  PlayerController playerSpeed = player.GetComponent<PlayerController>();
-        PlayerController playerSpeed = player.GetComponent<PlayerController>();
-        playerSpeed.speed -= 1f;
-       
+
         //Disable graphics
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
+       
 
-  //     ScoreManager playerScore = GetComponent<ScoreManager>();
-//       playerScore.scoreCount += 10f;
+        //Random Effekt auf den Player anwenden
+        int randomNumber = Random.Range(0, 3);
+        if (randomNumber==0)
+        {
+            Debug.Log("Möglichkeit EINS");
+            GameObject.Find("PowerUp").transform.GetChild(1).gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            GameObject.Find("PowerUp").transform.GetChild(1).gameObject.SetActive(true);
+
+            PlayerController playerSpeedlower = player.GetComponent<PlayerController>();
+            playerSpeedlower.speed -= 10f;
+
+            //Warte x Zeit
+            yield return new WaitForSeconds(duration);
+            //Effekt rueckgaengig machen
+            playerSpeedlower.speed += 10f;
+        }
+
+        else if(randomNumber==1)
+        {
+            Debug.Log("Möglichkeit ZWEI");
+            GameObject.Find("PowerUp").transform.GetChild(0).gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            GameObject.Find("PowerUp").transform.GetChild(0).gameObject.SetActive(false);
+
+            PlayerController playerSpeedhigher = player.GetComponent<PlayerController>();
+            playerSpeedhigher.speed += 10f;
+           
+
+            yield return new WaitForSeconds(duration);
+            //Effekt rueckgaengig machen
+            playerSpeedhigher.speed -= 10f;
+        }
+
+        else if(randomNumber==2)
+        {
+            Debug.Log("Möglichkeit DREI");
+            GameObject.Find("PowerUp").transform.GetChild(2).gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            GameObject.Find("PowerUp").transform.GetChild(2).gameObject.SetActive(false);
+        }
 
 
-        //Warte x Zeit
-        yield return new WaitForSeconds(duration);
 
-        //Effekt rueckgaengig machen
-        playerSpeed.speed += 10f;
+        //     ScoreManager playerScore = GetComponent<ScoreManager>();
+        //       playerScore.scoreCount += 10f;
 
         //Object loeschen
         Destroy(gameObject);
         Debug.Log("Power up picked up!");
 
     }
+
+
 }
