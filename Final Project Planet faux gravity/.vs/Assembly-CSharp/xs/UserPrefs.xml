@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{850A214D-C86C-0CF7-60A3-97E13BD550D5}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Skripte/Camera.cs">
+    <Files>
+      <File FileName="Assets/Skripte/Gravity.cs" Line="21" Column="33" />
+      <File FileName="Assets/Skripte/Camera.cs" Line="7" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

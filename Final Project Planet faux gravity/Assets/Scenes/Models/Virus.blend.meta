@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 990ee73206a72440481148115743d98d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Part
+    100002: Part_001
+    100004: Part_002
+    100006: Part_003
+    100008: Part_004
+    100010: Part_005
+    100012: Part_006
+    100014: Part_007
+    100016: Part_008
+    100018: Part_009
+    100020: Part_010
+    100022: Part_011
+    100024: Part_012
+    100026: Part_013
+    100028: Part_014
+    100030: Part_015
+    100032: Part_016
+    100034: Part_017
+    100036: Part_018
+    100038: Part_019
+    100040: Part_020
+    100042: Part_021
+    100044: Part_022
+    100046: Part_023
+    100048: Part_024
+    100050: Part_026
+    100052: //RootNode
+    100054: Virus
+    400000: Part
+    400002: Part_001
+    400004: Part_002
+    400006: Part_003
+    400008: Part_004
+    400010: Part_005
+    400012: Part_006
+    400014: Part_007
+    400016: Part_008
+    400018: Part_009
+    400020: Part_010
+    400022: Part_011
+    400024: Part_012
+    400026: Part_013
+    400028: Part_014
+    400030: Part_015
+    400032: Part_016
+    400034: Part_017
+    400036: Part_018
+    400038: Part_019
+    400040: Part_020
+    400042: Part_021
+    400044: Part_022
+    400046: Part_023
+    400048: Part_024
+    400050: Part_026
+    400052: Virus
+    400054: //RootNode
+    2100000: Red
+    2100002: White
+    2100004: unnamed
+    2300000: Part
+    2300002: Part_001
+    2300004: Part_002
+    2300006: Part_003
+    2300008: Part_004
+    2300010: Part_005
+    2300012: Part_006
+    2300014: Part_007
+    2300016: Part_008
+    2300018: Part_009
+    2300020: Part_010
+    2300022: Part_011
+    2300024: Part_012
+    2300026: Part_013
+    2300028: Part_014
+    2300030: Part_015
+    2300032: Part_016
+    2300034: Part_017
+    2300036: Part_018
+    2300038: Part_019
+    2300040: Part_020
+    2300042: Part_021
+    2300044: Part_022
+    2300046: Part_023
+    2300048: Part_024
+    2300050: Part_026
+    2300052: Virus
+    3300000: Part
+    3300002: Part_001
+    3300004: Part_002
+    3300006: Part_003
+    3300008: Part_004
+    3300010: Part_005
+    3300012: Part_006
+    3300014: Part_007
+    3300016: Part_008
+    3300018: Part_009
+    3300020: Part_010
+    3300022: Part_011
+    3300024: Part_012
+    3300026: Part_013
+    3300028: Part_014
+    3300030: Part_015
+    3300032: Part_016
+    3300034: Part_017
+    3300036: Part_018
+    3300038: Part_019
+    3300040: Part_020
+    3300042: Part_021
+    3300044: Part_022
+    3300046: Part_023
+    3300048: Part_024
+    3300050: Part_026
+    3300052: Virus
+    4300000: Part_026
+    4300002: Part_024
+    4300004: Part_023
+    4300006: Part_022
+    4300008: Part_021
+    4300010: Part_020
+    4300012: Part_019
+    4300014: Part_018
+    4300016: Part_017
+    4300018: Part_016
+    4300020: Part_015
+    4300022: Part_014
+    4300024: Part_013
+    4300026: Part_012
+    4300028: Part_011
+    4300030: Part_010
+    4300032: Part_009
+    4300034: Part_008
+    4300036: Part_007
+    4300038: Part_006
+    4300040: Part_005
+    4300042: Part_004
+    4300044: Part_003
+    4300046: Part_002
+    4300048: Part_001
+    4300050: Virus
+    4300052: Part
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
